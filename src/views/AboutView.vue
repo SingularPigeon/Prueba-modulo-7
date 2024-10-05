@@ -1,6 +1,9 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="container text-center">
+    <div class="row">
+      <h1 class="mt-5">Somos unos kawaii</h1>
+      <p class="display-3">(◕‿◕✿)</p>
+    </div>
   </div>
 </template>
 

@@ -8,7 +8,7 @@ import { describe, it, expect } from 'vitest'
 describe(' Se renderiza la vista AboutView en la App', async () => {
   const routerPruebas = createRouter({
     history: createWebHistory(),
-    routes: [{ path: '/about', name: 'about', component: AboutView }]
+    routes: [{ path: '/about', name: 'about', component: () => import('@/views/AboutView.vue') }]
   })
   it('Navega y renderiza la vista correspondiente', async () => {
     routerPruebas.push({ name: 'about' })

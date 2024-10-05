@@ -15,9 +15,15 @@ describe(' Se renderiza la vista CounterView en la App', async () => {
 
     routerPruebas = createRouter({
       history: createWebHistory(),
-      routes: [{ path: '/counter', name: 'counter', component: CounterView }]
+      routes: [
+        {
+          path: '/counter',
+          name: 'counterView',
+          component: () => import('@/views/CounterView.vue')
+        }
+      ]
     })
-    routerPruebas.push({ name: 'counter' })
+    routerPruebas.push({ name: 'counterView' })
     await routerPruebas.isReady()
 
     wrapper = mount(App, {

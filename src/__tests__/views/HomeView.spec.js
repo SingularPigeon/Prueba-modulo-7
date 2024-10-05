@@ -3,6 +3,7 @@ import { mount } from '@vue/test-utils'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from '@/App.vue'
 import HomeView from '@/views/HomeView.vue'
+// import FormUser from '@/components/FormUser.vue'
 import { describe, it, expect } from 'vitest'
 
 describe(' Se renderiza la vista HomeView en la App', async () => {
