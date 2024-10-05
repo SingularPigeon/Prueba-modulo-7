@@ -3,5 +3,7 @@ import CounterComponent from '@/components/CounterComponent.vue'
 </script>
 
 <template>
-  <CounterComponent />
+  <div class="container">
+    <CounterComponent />
+  </div>
 </template>

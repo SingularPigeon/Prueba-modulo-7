@@ -15,7 +15,7 @@ describe('Counter', () => {
     vi.resetAllMocks()
   })
 
-  it('Está recibiendo el valor inicial', () => {
+  it('Está recibiendo el valor inicial de "0"', () => {
     expect(wrapper.vm.count).toBe(0)
   })
 

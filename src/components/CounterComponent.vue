@@ -14,22 +14,18 @@ const disminuir = counterStore.disminuir
 const reset = counterStore.reset
 </script>
 <template>
-  <div id="counter" class="counter">
-    <h2>Contador: {{ count }}</h2>
-
-    <button id="aumentar" @click="aumentar">Aumentar</button>
-    <button id="disminuir" @click="disminuir">Disminuir</button>
-    <button id="reset" @click="reset">Reset</button>
+  <div class="row d-flex flex-column align-items-center mt-5">
+    <div id="counter" class="col-md-6">
+      <h2 class="text-center">
+        Contador: <span class="fs-2"> {{ count }} </span>
+      </h2>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button id="aumentar" class="btn bg-success-subtle" @click="aumentar">+</button>
+        <button id="disminuir" class="btn bg-danger-subtle" @click="disminuir">-</button>
+        <button id="reset" class="btn bg-primary-subtle" @click="reset">Resetear Contador</button>
+      </div>
+    </div>
   </div>
 </template>
 
-<style scoped>
-.counter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-button {
-  margin: 5px;
-}
-</style>
+<style scoped></style>

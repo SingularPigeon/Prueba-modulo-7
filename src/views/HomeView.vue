@@ -2,7 +2,7 @@
   <div class="container mt-5">
     <div class="row d-flex flex-column align-items-center">
       <h1 class="text-center">Regístrate</h1>
-      <div class="col-md-6">
+      <div class="col-md-6 mt-5">
         <FormUser @form-submitted="handleSubmit" />
       </div>
     </div>

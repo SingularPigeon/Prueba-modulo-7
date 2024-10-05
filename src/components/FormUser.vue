@@ -1,5 +1,5 @@
 <script setup>
-import { ref, defineEmits } from 'vue'
+import { ref } from 'vue'
 
 const firstName = ref('')
 const lastName = ref('')
@@ -36,7 +36,7 @@ function handleSubmit() {
       <input
         type="text"
         class="form-control"
-        id="lastName"
+        id="lastname"
         placeholder="Ingresa tu apellido"
         required
         v-model="lastName"
@@ -54,7 +54,7 @@ function handleSubmit() {
       />
     </div>
     <div class="mb-3">
-      <button type="submit" class="btn bg-info-subtle">Registrarse</button>
+      <button type="submit" class="btn bg-info-subtle w-100">Registrarse</button>
     </div>
   </form>
 </template>
