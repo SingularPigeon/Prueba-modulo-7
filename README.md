@@ -1,9 +1,8 @@
 # Prueba-modulo-7
 
 Desarrollo de ejercicios, aplicando los conocimientos adquiridos de Pinia, Vue, Router, pruebas unitarias con Vitest y Hosting de Firebase.
-![](/public/preview-prueba-modulo-7.png)
-
 Puedes revisar deploy [aquí 🚀](https://prueba-modulo-7-d89ff.web.app/)
+![](/public/preview-prueba-modulo-7.png)
 
 ---
 
