@@ -1,3 +1,16 @@
+<script setup>
+// Parent Component
+import { ref } from 'vue'
+import FormUser from '@/components/FormUser.vue'
+
+// Estado para almacenar los datos del formulario
+const formData = ref({})
+
+// Función para manejar la recepción de datos desde el componente hijo
+function handleSubmit(data) {
+  formData.value = data
+}
+</script>
 <template>
   <div class="container mt-5">
     <div class="row d-flex flex-column align-items-center">
@@ -19,16 +32,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import { ref } from 'vue'
-import FormUser from '@/components/FormUser.vue'
-
-// Estado para almacenar los datos del formulario
-const formData = ref({})
-
-// Función para manejar la recepción de datos desde el componente hijo
-function handleSubmit(data) {
-  formData.value = data
-}
-</script>

@@ -1,17 +1,21 @@
 <script setup>
+//Child component
 import { ref } from 'vue'
-
+//Estadoa para almacenar los datos ingresados en el formulario
 const firstName = ref('')
 const lastName = ref('')
 const email = ref('')
+// Define el evento que será emitido al componente padre
 const emit = defineEmits(['form-submitted'])
 
+//Función para enviar los datos al componente padre
 function handleSubmit() {
   emit('form-submitted', {
     firstName: firstName.value,
     lastName: lastName.value,
     email: email.value
   })
+  // Limpia los campos del formulario una vez realizado el submit
   firstName.value = ''
   lastName.value = ''
   email.value = ''
