@@ -5,7 +5,7 @@ import { computed } from 'vue'
 // Instancia del store
 const counterStore = useCounterStore()
 
-// Computed para acceder al valor del contador y su valor duplicado
+// Computed para acceder al valor del contador
 const count = computed(() => counterStore.count)
 
 // Métodos del store para modificar el estado
