@@ -21,8 +21,8 @@ import { RouterLink } from 'vue-router'
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto pe-5">
           <RouterLink to="/" class="nav-link">Inicio</RouterLink>
-          <RouterLink to="/about" class="nav-link">Sobre nosotros</RouterLink>
-          <RouterLink to="/counter" class="nav-link">Contador</RouterLink>
+          <RouterLink :to="{ name: about }" class="nav-link">Sobre nosotros</RouterLink>
+          <RouterLink :to="{ name: counter }" class="nav-link">Contador</RouterLink>
         </div>
       </div>
     </div>

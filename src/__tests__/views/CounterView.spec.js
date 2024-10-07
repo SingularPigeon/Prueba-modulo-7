@@ -1,9 +1,9 @@
 // Testeo de la ruta de la vista 'CounterView'
 import { mount } from '@vue/test-utils'
 import { createRouter, createWebHistory } from 'vue-router'
-import CounterView from '@/views/CounterView.vue'
 import { describe, it, vi, expect, beforeEach, afterEach } from 'vitest'
 import { setActivePinia, createPinia } from 'pinia'
+import CounterView from '@/views/CounterView.vue'
 
 describe(' Se renderiza la vista CounterView en la App', async () => {
   let wrapper

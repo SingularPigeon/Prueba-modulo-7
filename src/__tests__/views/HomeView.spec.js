@@ -2,6 +2,7 @@
 import { mount } from '@vue/test-utils'
 import { createRouter, createWebHistory } from 'vue-router'
 import { describe, it, expect } from 'vitest'
+import App from '@/App.vue'
 import HomeView from '@/views/HomeView.vue'
 
 describe(' Se renderiza la vista HomeView en la App', async () => {
@@ -15,7 +16,7 @@ describe(' Se renderiza la vista HomeView en la App', async () => {
     routerPruebas.push('/')
     await routerPruebas.isReady()
     // Crea un wrapper para el montado del componente HomeView
-    const wrapper = mount(HomeView, {
+    const wrapper = mount(App, {
       global: {
         plugins: [routerPruebas]
       }
